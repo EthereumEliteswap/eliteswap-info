@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react'
 import styled from 'styled-components'
-import { useUserTransactions, useUserPositions, useMiningPositions } from '../contexts/User'
+// import { useUserTransactions, useUserPositions, useMiningPositions } from '../contexts/User'
+import { useUserTransactions, useUserPositions } from '../contexts/User'
 import TxnList from '../components/TxnList'
 import Panel from '../components/Panel'
 import { formattedNum } from '../utils'
@@ -91,7 +92,7 @@ function AccountPage({ account }) {
   // get data for this account
   const transactions = useUserTransactions(account)
   const positions = useUserPositions(account)
-  const miningPositions = useMiningPositions(account)
+//   const miningPositions = useMiningPositions(account)
 
   // get data for user stats
   const transactionCount = transactions?.swaps?.length + transactions?.burns?.length + transactions?.mints?.length
@@ -310,8 +311,9 @@ function AccountPage({ account }) {
               marginTop: '1.5rem',
             }}
           >
-            {miningPositions && <MiningPositionList miningPositions={miningPositions} />}
-            {!miningPositions && (
+//             {miningPositions && <MiningPositionList miningPositions={miningPositions} />}
+//             {!miningPositions && (
+            {(
               <AutoColumn gap="8px" justify="flex-start">
                 <TYPE.main>No Staked Liquidity.</TYPE.main>
                 <AutoRow gap="8px" justify="flex-start">

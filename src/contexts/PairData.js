@@ -621,7 +621,7 @@ export function usePairChartData(pairAddress) {
 }
 
 /**
- * Get list of all pairs in Uniswap
+ * Get list of all pairs in Elite Swap
  */
 export function useAllPairData() {
   const [state] = usePairDataContext()

@@ -18,7 +18,7 @@ const TitleWrapper = styled.div`
   z-index: 10;
 `
 
-const UniIcon = styled(Link)`
+const EltIcon = styled(Link)`
   transition: transform 0.3s ease;
   :hover {
     transform: rotate(-5deg);
@@ -32,9 +32,9 @@ export default function Title() {
     <TitleWrapper onClick={() => history.push('/')}>
       <Flex alignItems="center">
         <RowFixed>
-          <UniIcon id="link" onClick={() => history.push('/')}>
+          <EltIcon id="link" onClick={() => history.push('/')}>
             <img width={'24px'} src={Logo} alt="logo" />
-          </UniIcon>
+          </EltIcon>
           <img width={'84px'} style={{ marginLeft: '8px', marginTop: '0px' }} src={Wordmark} alt="logo" />
         </RowFixed>
       </Flex>

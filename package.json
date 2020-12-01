@@ -1,7 +1,7 @@
 {
-  "name": "@uniswap/info",
+  "name": "@eliteswap/info",
   "private": true,
-  "homepage": "https://info.uniswap.org",
+  "homepage": "https://eliteswap.info",
   "devDependencies": {
     "@popperjs/core": "^2.4.2",
     "@reach/portal": "^0.10.3",
@@ -13,7 +13,7 @@
     "@types/styled-components": "^5.1.0",
     "@typescript-eslint/eslint-plugin": "^4.4.0",
     "@typescript-eslint/parser": "^4.4.0",
-    "@uniswap/token-lists": "^1.0.0-beta.15",
+    "@eliteswap/token-lists": "^1.0.0",
     "ajv": "^6.12.4",
     "animated-number-react": "^0.1.1",
     "apollo-cache-inmemory": "^1.6.3",
