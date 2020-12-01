@@ -311,9 +311,9 @@ function AccountPage({ account }) {
               marginTop: '1.5rem',
             }}
           >
+            {(
 //             {miningPositions && <MiningPositionList miningPositions={miningPositions} />}
 //             {!miningPositions && (
-            {(
               <AutoColumn gap="8px" justify="flex-start">
                 <TYPE.main>No Staked Liquidity.</TYPE.main>
                 <AutoRow gap="8px" justify="flex-start">
