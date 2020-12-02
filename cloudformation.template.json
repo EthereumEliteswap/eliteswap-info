@@ -1,6 +1,6 @@
 {
   "AWSTemplateFormatVersion": "2010-09-09",
-  "Description": "eliteswap.info site",
+  "Description": "eliteswap.io/info site",
   "Outputs": {
     "DeploymentAccessKeyId": {
       "Description": "Access key ID for deploying to the S3 bucket",
@@ -75,12 +75,12 @@
       "Type": "AWS::CertificateManager::Certificate",
       "Description": "The certificate used to secure the CloudFront distribution",
       "Properties": {
-        "DomainName": "eliteswap.info",
+        "DomainName": "eliteswap.io/info",
         "ValidationMethod": "DNS",
         "Tags": [
           {
             "Key": "Name",
-            "Value": "eliteswap.info"
+            "Value": "eliteswap.io/info"
           },
           {
             "Key": "Stack",
@@ -219,9 +219,9 @@
               "ResponsePagePath": "/"
             }
           ],
-          "Comment": "eliteswap.info",
+          "Comment": "eliteswap.io/info",
           "Enabled": true,
-          "Aliases": ["eliteswap.info"],
+          "Aliases": ["eliteswap.io/info"],
           "DefaultRootObject": "index.html",
           "HttpVersion": "http2",
           "Origins": [

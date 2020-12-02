@@ -1,7 +1,7 @@
 {
   "name": "@eliteswap/info",
   "private": true,
-  "homepage": "https://eliteswap.info",
+  "homepage": "https://eliteswap.io/info",
   "devDependencies": {
     "@eliteswap/token-lists": "^1.0.0",
     "@popperjs/core": "^2.4.2",
